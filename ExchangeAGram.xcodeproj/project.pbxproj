@@ -19,6 +19,9 @@
 		A1DFCEEE1A77BA1400AE0A72 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEED1A77BA1400AE0A72 /* FeedItem.swift */; };
 		A1DFCEF01A78D21100AE0A72 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */; };
 		A1DFCEF21A78D6BB00AE0A72 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */; };
+		A1DFCEF71A7A23CB00AE0A72 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCEF41A7A23CB00AE0A72 /* Placeholder.png */; };
+		A1DFCEF81A7A23CB00AE0A72 /* Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCEF51A7A23CB00AE0A72 /* Placeholder@2x.png */; };
+		A1DFCEF91A7A23CB00AE0A72 /* Placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCEF61A7A23CB00AE0A72 /* Placeholder@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		A1DFCEED1A77BA1400AE0A72 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		A1DFCEF41A7A23CB00AE0A72 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Placeholder.png; path = ExchangeAGramPlaceHolders/Placeholder.png; sourceTree = "<group>"; };
+		A1DFCEF51A7A23CB00AE0A72 /* Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Placeholder@2x.png"; path = "ExchangeAGramPlaceHolders/Placeholder@2x.png"; sourceTree = "<group>"; };
+		A1DFCEF61A7A23CB00AE0A72 /* Placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Placeholder@3x.png"; path = "ExchangeAGramPlaceHolders/Placeholder@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 		A1DFCEC21A7633DF00AE0A72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1DFCEF41A7A23CB00AE0A72 /* Placeholder.png */,
+				A1DFCEF51A7A23CB00AE0A72 /* Placeholder@2x.png */,
+				A1DFCEF61A7A23CB00AE0A72 /* Placeholder@3x.png */,
+				A1DFCEF31A7A23CB00AE0A72 /* ExchangeAGramPlaceHolders */,
 				A1DFCEEB1A77830D00AE0A72 /* MobileCoreServices.framework */,
 				A1DFCEC31A7633DF00AE0A72 /* Info.plist */,
 			);
@@ -129,6 +139,13 @@
 				A1DFCEDC1A7633DF00AE0A72 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1DFCEF31A7A23CB00AE0A72 /* ExchangeAGramPlaceHolders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExchangeAGramPlaceHolders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DFCEF81A7A23CB00AE0A72 /* Placeholder@2x.png in Resources */,
 				A1DFCECD1A7633DF00AE0A72 /* Main.storyboard in Resources */,
+				A1DFCEF71A7A23CB00AE0A72 /* Placeholder.png in Resources */,
+				A1DFCEF91A7A23CB00AE0A72 /* Placeholder@3x.png in Resources */,
 				A1DFCED21A7633DF00AE0A72 /* LaunchScreen.xib in Resources */,
 				A1DFCECF1A7633DF00AE0A72 /* Images.xcassets in Resources */,
 			);
