@@ -25,7 +25,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 1250.0, height: 150.0)
+        layout.itemSize = CGSize(width: 150.0, height: 150.0)
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
