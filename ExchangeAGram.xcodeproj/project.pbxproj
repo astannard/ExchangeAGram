@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AEA1D191A7EC6AD00176655 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEA1D181A7EC6AD00176655 /* FeedItem.swift */; };
 		A1DFCEC51A7633DF00AE0A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */; };
 		A1DFCEC81A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEC61A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld */; };
 		A1DFCECD1A7633DF00AE0A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		A1DFCEE81A777F5C00AE0A72 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEE71A777F5C00AE0A72 /* FeedViewController.swift */; };
 		A1DFCEEA1A77817700AE0A72 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEE91A77817700AE0A72 /* FeedCell.swift */; };
 		A1DFCEEC1A77830D00AE0A72 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFCEEB1A77830D00AE0A72 /* MobileCoreServices.framework */; };
-		A1DFCEEE1A77BA1400AE0A72 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEED1A77BA1400AE0A72 /* FeedItem.swift */; };
 		A1DFCEF01A78D21100AE0A72 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */; };
 		A1DFCEF21A78D6BB00AE0A72 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */; };
 		A1DFCEF71A7A23CB00AE0A72 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCEF41A7A23CB00AE0A72 /* Placeholder.png */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AEA1D181A7EC6AD00176655 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
 		A1DFCEBF1A7633DF00AE0A72 /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFCEC31A7633DF00AE0A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		A1DFCEE71A777F5C00AE0A72 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A1DFCEE91A77817700AE0A72 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A1DFCEEB1A77830D00AE0A72 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		A1DFCEED1A77BA1400AE0A72 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		A1DFCEF41A7A23CB00AE0A72 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Placeholder.png; path = ExchangeAGramPlaceHolders/Placeholder.png; sourceTree = "<group>"; };
@@ -75,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AEA1D1C1A7EC78C00176655 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1DFCEC61A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld */,
+				7AEA1D181A7EC6AD00176655 /* FeedItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A1DFCEB61A7633DF00AE0A72 = {
 			isa = PBXGroup;
 			children = (
@@ -98,14 +107,13 @@
 			children = (
 				A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */,
 				A1DFCEE71A777F5C00AE0A72 /* FeedViewController.swift */,
-				A1DFCEE91A77817700AE0A72 /* FeedCell.swift */,
+				7AEA1D1C1A7EC78C00176655 /* Model */,
 				A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */,
+				A1DFCEE91A77817700AE0A72 /* FeedCell.swift */,
 				A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */,
 				A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */,
 				A1DFCECE1A7633DF00AE0A72 /* Images.xcassets */,
 				A1DFCED01A7633DF00AE0A72 /* LaunchScreen.xib */,
-				A1DFCEC61A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld */,
-				A1DFCEED1A77BA1400AE0A72 /* FeedItem.swift */,
 				A1DFCEC21A7633DF00AE0A72 /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -256,7 +264,7 @@
 				A1DFCEC51A7633DF00AE0A72 /* AppDelegate.swift in Sources */,
 				A1DFCEEA1A77817700AE0A72 /* FeedCell.swift in Sources */,
 				A1DFCEE81A777F5C00AE0A72 /* FeedViewController.swift in Sources */,
-				A1DFCEEE1A77BA1400AE0A72 /* FeedItem.swift in Sources */,
+				7AEA1D191A7EC6AD00176655 /* FeedItem.swift in Sources */,
 				A1DFCEC81A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +459,7 @@
 				A1DFCEE31A7633DF00AE0A72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1DFCEE41A7633DF00AE0A72 /* Build configuration list for PBXNativeTarget "ExchangeAGramTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +468,7 @@
 				A1DFCEE61A7633DF00AE0A72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
