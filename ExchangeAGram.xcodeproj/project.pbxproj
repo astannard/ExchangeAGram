@@ -107,10 +107,10 @@
 			children = (
 				A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */,
 				A1DFCEE71A777F5C00AE0A72 /* FeedViewController.swift */,
+				A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */,
 				7AEA1D1C1A7EC78C00176655 /* Model */,
 				A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */,
 				A1DFCEE91A77817700AE0A72 /* FeedCell.swift */,
-				A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */,
 				A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */,
 				A1DFCECE1A7633DF00AE0A72 /* Images.xcassets */,
 				A1DFCED01A7633DF00AE0A72 /* LaunchScreen.xib */,
