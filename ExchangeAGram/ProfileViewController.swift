@@ -18,6 +18,8 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        println("Profile View Loaded")
+        
         // Do any additional setup after loading the view.
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile","publish_actions"]
@@ -46,8 +48,11 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
     }
     
     func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
+        println("User logged out")
         self.profileImageView.hidden = true
         self.nameLabel.hidden = true
+        self.fbLoginView.hidden = false
+        self.fbLoginView.sizeToFit()
     }
     
     func loginView(loginView: FBLoginView!, handleError error: NSError!) {
