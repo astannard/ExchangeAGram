@@ -111,13 +111,13 @@
 		A1DFCEC11A7633DF00AE0A72 /* ExchangeAGram */ = {
 			isa = PBXGroup;
 			children = (
+				A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */,
 				A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */,
 				A1DFCEE71A777F5C00AE0A72 /* FeedViewController.swift */,
 				A1DFCEEF1A78D21100AE0A72 /* FilterViewController.swift */,
 				A1ED6DC01A80BF3900F0121E /* ProfileViewController.swift */,
 				A1ED6DC41A820F2200F0121E /* Bridging-Header.h */,
 				7AEA1D1C1A7EC78C00176655 /* Model */,
-				A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */,
 				A1DFCEE91A77817700AE0A72 /* FeedCell.swift */,
 				A1DFCEF11A78D6BB00AE0A72 /* FilterCell.swift */,
 				A1DFCECE1A7633DF00AE0A72 /* Images.xcassets */,
