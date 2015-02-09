@@ -20,7 +20,7 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
 
         println("Profile View Loaded")
         
-        // Do any additional setup after loading the view.
+   //     // Do any additional setup after loading the view.
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile","publish_actions"]
     }

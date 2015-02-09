@@ -81,14 +81,10 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     //UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
-        let imageData = UIImageJPEGRepresentation(filterImage, 1.0)
-        self.thisFeedItem.image = imageData
-        let thumbNailData = UIImageJPEGRepresentation(filterImage, 0.1)
-        self.thisFeedItem.thumbnail = thumbNailData
-        (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
+      
+        createUIAlertController(indexPath)
         
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        
     }
     
     
@@ -143,6 +139,73 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         let cgImage:CGImageRef = context.createCGImage(filteredImage, fromRect: extent)
         let finalImage = UIImage(CGImage: cgImage)
         return finalImage!
+    }
+    
+    //UIAlert COntroll Helper Functions
+    
+    func createUIAlertController(indexPath: NSIndexPath) {
+        let alert = UIAlertController(title: "Photo Options", message: "Please choose an option", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addTextFieldWithConfigurationHandler { (textfield) -> Void in
+            textfield.placeholder = "Add Caption"
+            textfield.secureTextEntry = false
+        }
+        
+        var text:String
+        
+        let textField = alert.textFields![0] as UITextField
+        if textField.text != nil{
+            text = textField.text
+        }
+        
+        let photoAction = UIAlertAction(title: "Post Photo to Facebook with Caption", style: UIAlertActionStyle.Destructive) { (UIAlertAction) -> Void in
+            self.saveFilterTCoreDate(indexPath)
+        }
+        alert.addAction(photoAction)
+        
+        let saveFilterAction = UIAlertAction(title: "Save filter without posting to Facebook", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
+            self.saveFilterTCoreDate(indexPath)
+        }
+        alert.addAction(saveFilterAction)
+        
+        let cancelAction = UIAlertAction(title: "Select another filter", style: UIAlertActionStyle.Cancel) { (UIAlertAction) -> Void in
+            //Code
+        }
+        alert.addAction(cancelAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func saveFilterTCoreDate(indexPath: NSIndexPath){
+        
+        let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
+        let imageData = UIImageJPEGRepresentation(filterImage, 1.0)
+        self.thisFeedItem.image = imageData
+        let thumbNailData = UIImageJPEGRepresentation(filterImage, 0.1)
+        self.thisFeedItem.thumbnail = thumbNailData
+        (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+
+        
+    }
+    
+    func shareToFacebook(indexPath: NSIndexPath) {
+        let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
+        
+        let photos:NSArray = [filterImage]
+        var params = FBPhotoParams()
+        params.photos = photos
+        
+        FBDialogs.presentShareDialogWithPhotoParams(params, clientState: nil) { (call, result, error) -> Void in
+            if(result? != nil){
+                println(result)
+            }
+            else{
+                println(error)
+            }
+        }
+
     }
     
     
