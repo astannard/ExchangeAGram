@@ -154,17 +154,17 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         var text:String
         
         let textField = alert.textFields![0] as UITextField
-        if textField.text != nil{
-            text = textField.text
-        }
-        
+
         let photoAction = UIAlertAction(title: "Post Photo to Facebook with Caption", style: UIAlertActionStyle.Destructive) { (UIAlertAction) -> Void in
-            self.saveFilterTCoreDate(indexPath)
+           // self.saveFilterTCoreDate(indexPath)
+            
+            self.shareToFacebook(indexPath)
+            self.saveFilterTCoreDate(indexPath, caption: textField.text)
         }
         alert.addAction(photoAction)
         
         let saveFilterAction = UIAlertAction(title: "Save filter without posting to Facebook", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
-            self.saveFilterTCoreDate(indexPath)
+            self.saveFilterTCoreDate(indexPath, caption:textField.text)
         }
         alert.addAction(saveFilterAction)
         
@@ -176,13 +176,14 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    func saveFilterTCoreDate(indexPath: NSIndexPath){
+    func saveFilterTCoreDate(indexPath: NSIndexPath, caption: String){
         
         let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
         let imageData = UIImageJPEGRepresentation(filterImage, 1.0)
         self.thisFeedItem.image = imageData
         let thumbNailData = UIImageJPEGRepresentation(filterImage, 0.1)
         self.thisFeedItem.thumbnail = thumbNailData
+        self.thisFeedItem.caption = caption
         (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
         
         self.navigationController?.popToRootViewControllerAnimated(true)

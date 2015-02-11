@@ -30,6 +30,8 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func MapViewButtonTapped(sender: UIButton) {
+    }
 
     func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
         self.profileImageView.hidden = false
