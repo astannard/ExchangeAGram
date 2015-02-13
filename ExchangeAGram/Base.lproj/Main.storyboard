@@ -258,6 +258,7 @@
                         <outlet property="fbLoginView" destination="hQY-3H-T1N" id="H7Z-U1-tkv"/>
                         <outlet property="nameLabel" destination="8up-SY-zNe" id="mDh-yJ-BzJ"/>
                         <outlet property="profileImageView" destination="i0t-KA-EO9" id="j1R-Nq-Vlm"/>
+                        <segue destination="diC-li-RSr" kind="show" identifier="mapSeque" id="ZTL-mq-4SZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCS-Bv-0Me" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -275,8 +276,16 @@
                     <view key="view" contentMode="scaleToFill" id="XUq-Za-SgV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JeG-U5-bC3">
+                                <rect key="frame" x="0.0" y="-8" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="JeG-U5-bC3" id="fEJ-oT-MMS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVj-GX-HBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

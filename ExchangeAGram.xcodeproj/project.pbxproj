@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7AEA1D191A7EC6AD00176655 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEA1D181A7EC6AD00176655 /* FeedItem.swift */; };
 		A1C54E831A8B4A0A0003C995 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C54E821A8B4A0A0003C995 /* MapViewController.swift */; };
+		A1C54E961A8DEA430003C995 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C54E951A8DEA430003C995 /* MapKit.framework */; };
 		A1DFCEC51A7633DF00AE0A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */; };
 		A1DFCEC81A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEC61A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld */; };
 		A1DFCECD1A7633DF00AE0A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		7AEA1D181A7EC6AD00176655 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
 		A1C54E821A8B4A0A0003C995 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A1C54E951A8DEA430003C995 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A1DFCEBF1A7633DF00AE0A72 /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFCEC31A7633DF00AE0A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C54E961A8DEA430003C995 /* MapKit.framework in Frameworks */,
 				A1DFCEEC1A77830D00AE0A72 /* MobileCoreServices.framework in Frameworks */,
 				A1ED6DC31A820CFF00F0121E /* FacebookSDK.framework in Frameworks */,
 			);
@@ -133,6 +136,7 @@
 		A1DFCEC21A7633DF00AE0A72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1C54E951A8DEA430003C995 /* MapKit.framework */,
 				A1ED6DC21A820CFF00F0121E /* FacebookSDK.framework */,
 				A1DFCEF41A7A23CB00AE0A72 /* Placeholder.png */,
 				A1DFCEF51A7A23CB00AE0A72 /* Placeholder@2x.png */,

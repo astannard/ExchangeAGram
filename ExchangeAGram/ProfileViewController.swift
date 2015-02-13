@@ -31,6 +31,9 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
     }
     
     @IBAction func MapViewButtonTapped(sender: UIButton) {
+        
+        
+        
     }
 
     func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
