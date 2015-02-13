@@ -12,15 +12,23 @@ import CoreData
 import MapKit
 
 class FeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,
-                                    UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+                                    UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
     var feedArray:[AnyObject] = []
     
+    var locationManager:CLLocationManager!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = 100.00
+        locationManager.startUpdatingLocation()
+        
         
     }
     
@@ -133,5 +141,10 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         filterVC.thisFeedItem = thisItem
         
         self.navigationController?.pushViewController(filterVC, animated: false)
+    }
+    
+    //CLLocationManagerDelegate
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        println("locations = \(locations)");
     }
 }
