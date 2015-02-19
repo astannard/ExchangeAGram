@@ -19,8 +19,6 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
         super.viewDidLoad()
 
         println("Profile View Loaded")
-        
-   //     // Do any additional setup after loading the view.
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile","publish_actions"]
     }
@@ -32,7 +30,7 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
     
     @IBAction func MapViewButtonTapped(sender: UIButton) {
         
-        
+        performSegueWithIdentifier("mapSeque", sender: nil)
         
     }
 

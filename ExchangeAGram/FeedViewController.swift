@@ -26,6 +26,8 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        
         locationManager.distanceFilter = 100.00
         locationManager.startUpdatingLocation()
         
@@ -103,6 +105,8 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         feedItem.image = imageData
         feedItem.caption = "test caption"
         feedItem.thumbnail = thumbnailData
+        feedItem.lattitude = locationManager.location.coordinate.latitude
+        feedItem.longitude = locationManager.location.coordinate.longitude
         
         (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
         
