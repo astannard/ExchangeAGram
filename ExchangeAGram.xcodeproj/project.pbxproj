@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A1C54E831A8B4A0A0003C995 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C54E821A8B4A0A0003C995 /* MapViewController.swift */; };
 		A1C54E961A8DEA430003C995 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C54E951A8DEA430003C995 /* MapKit.framework */; };
-		A1C54E981A95DA1B0003C995 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C54E971A95DA1B0003C995 /* FeedItem.swift */; };
+		A1C54E9A1A9B18F60003C995 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C54E991A9B18F60003C995 /* FeedItem.swift */; };
 		A1DFCEC51A7633DF00AE0A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */; };
 		A1DFCEC81A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1DFCEC61A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld */; };
 		A1DFCECD1A7633DF00AE0A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DFCECB1A7633DF00AE0A72 /* Main.storyboard */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		A1C54E821A8B4A0A0003C995 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1C54E951A8DEA430003C995 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		A1C54E971A95DA1B0003C995 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		A1C54E991A9B18F60003C995 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		A1DFCEBF1A7633DF00AE0A72 /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFCEC31A7633DF00AE0A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DFCEC41A7633DF00AE0A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DFCEC61A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld */,
-				A1C54E971A95DA1B0003C995 /* FeedItem.swift */,
+				A1C54E991A9B18F60003C995 /* FeedItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 				A1DFCEC51A7633DF00AE0A72 /* AppDelegate.swift in Sources */,
 				A1DFCEEA1A77817700AE0A72 /* FeedCell.swift in Sources */,
 				A1C54E831A8B4A0A0003C995 /* MapViewController.swift in Sources */,
-				A1C54E981A95DA1B0003C995 /* FeedItem.swift in Sources */,
+				A1C54E9A1A9B18F60003C995 /* FeedItem.swift in Sources */,
 				A1DFCEE81A777F5C00AE0A72 /* FeedViewController.swift in Sources */,
 				A1ED6DC11A80BF3900F0121E /* ProfileViewController.swift in Sources */,
 				A1DFCEC81A7633DF00AE0A72 /* ExchangeAGram.xcdatamodeld in Sources */,
