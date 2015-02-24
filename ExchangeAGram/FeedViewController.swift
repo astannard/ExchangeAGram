@@ -23,6 +23,10 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let imageBackground = UIImage(named: "AutumnBackground")
+        self.view.backgroundColor = UIColor(patternImage: imageBackground!)
+        
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -107,6 +111,9 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         feedItem.thumbnail = thumbnailData
         feedItem.latitude = locationManager.location.coordinate.latitude
         feedItem.longitude = locationManager.location.coordinate.longitude
+        let UUID = NSUUID().UUIDString
+        feedItem.uniqueID = UUID
+        
         
         (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
         
